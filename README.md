@@ -126,6 +126,32 @@ Not features for the sake of features.
 
 ---
 
+## 🛠 What The App Would Include
+
+**User Side:**
+
+- Create account
+- Search service
+- Book service
+- Pay online or cash
+- Ratings & reviews
+
+**Professional Side:**
+
+- Create profile
+- Set pricing
+- Accept jobs
+- Wallet dashboard
+
+**Admin:**
+
+- Approve providers
+- Manage disputes
+- Analytics
+- Commission tracking
+
+---
+
 ## Core Features (MVP Scope)
 
 ### 1. Inventory Management
