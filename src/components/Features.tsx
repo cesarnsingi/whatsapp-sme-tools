@@ -1,47 +1,44 @@
+import Container from "./Layout/Container";
+
 export default function Features() {
-  const features = [
+  const list = [
     {
       title: "Inventory Management",
-      description:
-        "Add products, update stock, and receive low-stock alerts directly through WhatsApp.",
+      desc: "Add products, update stock, and receive low-stock alerts via WhatsApp.",
     },
     {
       title: "Invoice Generation",
-      description:
-        "Create invoices, calculate totals automatically, and track pending payments.",
+      desc: "Create invoices and track payments seamlessly.",
     },
     {
       title: "Payment Tracking",
-      description:
-        "Monitor revenue, mark invoices as paid, and stay on top of cash flow.",
+      desc: "Monitor your cash flow and mark statuses with ease.",
     },
     {
-      title: "Simple CRM",
-      description:
-        "Automatically store customers, track purchase history, and identify returning clients.",
+      title: "CRM Basics",
+      desc: "Capture customers and track their activity.",
     },
   ];
 
   return (
     <section id="features" className="py-20">
-      <div className="max-w-6xl mx-auto px-6">
-        <h3 className="text-3xl font-semibold text-center">
-          Core Features
-        </h3>
+      <Container>
+        <h2 className="text-3xl font-semibold text-center">
+          <span className="relative inline-block font-bold text-black pb-2">
+            Core Features
+            <span className="absolute bottom-0 left-0 w-full h-2 bg-green-700 rounded-sm"></span>
+          </span>
+        </h2>
 
-        <div className="grid md:grid-cols-2 gap-12 mt-16">
-          {features.map((feature, index) => (
-            <div key={index}>
-              <h4 className="text-xl font-medium mb-3">
-                {feature.title}
-              </h4>
-              <p className="text-gray-600">
-                {feature.description}
-              </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-10">
+          {list.map((f, i) => (
+            <div key={i}>
+              <h3 className="text-xl font-medium">{f.title}</h3>
+              <p className="text-gray-600 mt-1">{f.desc}</p>
             </div>
           ))}
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

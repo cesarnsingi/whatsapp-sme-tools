@@ -1,31 +1,41 @@
+import Container from "./Layout/Container";
+
 export default function Hero() {
   return (
-    <section className="py-24 bg-soft">
-      <div className="max-w-4xl mx-auto px-6 text-center">
-        <h2 className="text-4xl md:text-5xl font-semibold leading-tight">
-          Your Business.
-          <br />
-          Managed Through WhatsApp.
-        </h2>
+    <section className="bg-soft">
+      <Container>
+        <div className="text-center pt-24 pb-12">
+          <h1 className="text-5xl font-bold leading-tight">
+            Your Business.
+            <br />
+            Managed Through{" "}
+            <span className="relative inline-block font-bold text-black">
+              <span className="absolute top-0 left-0 w-full h-2 bg-green-700 rounded-sm"></span>
+              <span className="relative px-1">
+                WhatsApp
+              </span>
+            </span>
+            .
+          </h1>
 
-        <p className="mt-6 text-gray-600 text-lg">
-          Cerins transforms WhatsApp into your inventory manager,
-          invoice generator, payment tracker, and CRM —
-          built for SMEs in Angola.
-        </p>
+          <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+            <span className="text-green-600 font-semibold">
+              Built
+            </span>{" "}
+            for SMEs in Angola.
+          </p>
 
-        {/* Centered Buttons */}
-        <div className="mt-10 flex flex-col items-center gap-4">
-          <button className="bg-primary text-white px-6 py-3 rounded-md">
-            Book Demo
-          </button>
+          <div className="mt-10 flex justify-center gap-4">
+            <button className="bg-primary text-white px-8 py-3 rounded-md">
+              Book Demo
+            </button>
 
-          {/* Optional secondary button */}
-          <button className="border border-primary px-6 py-3 rounded-md">
-            Start on WhatsApp
-          </button>
+            <button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-md transition-colors">
+              Start on WhatsApp
+            </button>
+          </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }
