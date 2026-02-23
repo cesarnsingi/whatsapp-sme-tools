@@ -1,4 +1,5 @@
 import Container from "./Layout/Container";
+import { MdOutlineSegment } from "react-icons/md";
 
 export default function Hero() {
   return (
@@ -6,7 +7,10 @@ export default function Hero() {
       <Container>
         <div className="text-center pt-24 pb-12">
           <h1 className="text-5xl font-bold leading-tight">
-            Your Business.
+            <span className="inline-flex items-center gap-2">
+              <MdOutlineSegment className="w-10 h-10 text-green-700" />
+              Your Business.
+            </span>
             <br />
             Managed Through{" "}
             <span className="relative inline-block font-bold text-black">
@@ -25,13 +29,10 @@ export default function Hero() {
             for SMEs in Angola.
           </p>
 
-          <div className="mt-10 flex justify-center gap-4">
-            <button className="bg-primary text-white px-8 py-3 rounded-md">
-              Book Demo
-            </button>
-
-            <button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-md transition-colors">
-              Start on WhatsApp
+          {/* Button slightly shifted left from right */}
+          <div className="mt-10 flex justify-center md:justify-end md:pr-20">
+            <button className="bg-green-600 hover:bg-green-700 text-black font-bold px-8 py-3 rounded-md transition-colors">
+              Become a Partner
             </button>
           </div>
         </div>

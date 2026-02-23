@@ -15,7 +15,7 @@ export default function HeroFeatures() {
           {/* Right: Features */}
           <div className="flex-1">
             <h2 className="text-3xl font-semibold mb-6">
-              Cerins turns WhatsApp into:
+              Wabot turns WhatsApp into:
             </h2>
 
             <ul className="space-y-4">
