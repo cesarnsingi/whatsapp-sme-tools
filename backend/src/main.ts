@@ -9,4 +9,5 @@ async function bootstrap() {
 
   console.log(`🚀 Wabot running on http://localhost:${port}`);
 }
-bootstrap();
+
+void bootstrap();
