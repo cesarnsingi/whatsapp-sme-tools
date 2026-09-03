@@ -4,7 +4,9 @@ import { AppModule } from './app.module';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
-  const port = process.env.PORT || 5000;
+  app.enableCors(); // frontend runs on a different port/origin
+
+  const port = 3001; // hardcoded, ignoring process.env.PORT for now
   await app.listen(port);
 
   console.log(`🚀 Wabot running on http://localhost:${port}`);
